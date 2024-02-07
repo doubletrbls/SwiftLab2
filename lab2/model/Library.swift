@@ -8,21 +8,20 @@
 import Foundation
 
 class Library {
-    var library: [Book] = []
+    var library: [String:Book] = [:]
     
     func addBook(book: Book) {
-        library.append(book)
+        library[book.title] = book
     }
     
-    func removeBook(book: Book) {
-        if let index = library.firstIndex(where: { $0 === book }) {
-            library.remove(at: index)
-        }
+    func removeBook(bookTitle: String) {
+        library.removeValue(forKey: bookTitle)
     }
     
     func displayLibraryInfo() {
-        library.forEach { book in 
-            book.displayBookInfo()
+        print("Total number of books in library  \(library.count)")
+        library.forEach { book in
+            book.value.displayBookInfo()
             print()
         }
     }

@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		543C9EC22B70D23100094302 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543C9EC12B70D23100094302 /* main.swift */; };
+		543C9EC92B70D28D00094302 /* BankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543C9EC82B70D28D00094302 /* BankAccount.swift */; };
+		543C9ECB2B72A77F00094302 /* task1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543C9ECA2B72A77F00094302 /* task1.swift */; };
+		543C9ECD2B73CD2E00094302 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543C9ECC2B73CD2E00094302 /* Book.swift */; };
+		543C9ECF2B73D0EC00094302 /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543C9ECE2B73D0EC00094302 /* Library.swift */; };
+		543C9ED32B73D4B800094302 /* task2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543C9ED22B73D4B800094302 /* task2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,11 @@
 /* Begin PBXFileReference section */
 		543C9EBE2B70D23100094302 /* lab2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = lab2; sourceTree = BUILT_PRODUCTS_DIR; };
 		543C9EC12B70D23100094302 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		543C9EC82B70D28D00094302 /* BankAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccount.swift; sourceTree = "<group>"; };
+		543C9ECA2B72A77F00094302 /* task1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = task1.swift; sourceTree = "<group>"; };
+		543C9ECC2B73CD2E00094302 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		543C9ECE2B73D0EC00094302 /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
+		543C9ED22B73D4B800094302 /* task2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = task2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +67,30 @@
 		543C9EC02B70D23100094302 /* lab2 */ = {
 			isa = PBXGroup;
 			children = (
+				543C9ED12B73D49E00094302 /* tasks */,
+				543C9ED02B73D46400094302 /* model */,
 				543C9EC12B70D23100094302 /* main.swift */,
 			);
 			path = lab2;
+			sourceTree = "<group>";
+		};
+		543C9ED02B73D46400094302 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				543C9EC82B70D28D00094302 /* BankAccount.swift */,
+				543C9ECC2B73CD2E00094302 /* Book.swift */,
+				543C9ECE2B73D0EC00094302 /* Library.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		543C9ED12B73D49E00094302 /* tasks */ = {
+			isa = PBXGroup;
+			children = (
+				543C9ECA2B72A77F00094302 /* task1.swift */,
+				543C9ED22B73D4B800094302 /* task2.swift */,
+			);
+			path = tasks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,7 +151,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				543C9ECD2B73CD2E00094302 /* Book.swift in Sources */,
+				543C9ED32B73D4B800094302 /* task2.swift in Sources */,
 				543C9EC22B70D23100094302 /* main.swift in Sources */,
+				543C9ECF2B73D0EC00094302 /* Library.swift in Sources */,
+				543C9ECB2B72A77F00094302 /* task1.swift in Sources */,
+				543C9EC92B70D28D00094302 /* BankAccount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

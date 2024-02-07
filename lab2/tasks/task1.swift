@@ -11,8 +11,8 @@ func task1() {
     var counter: Int = 0
     var accountsInfo:[String:BankAccount] = [:]
     let strId = "BNKID-"
-
-    MAIN:
+    
+MAIN:
     while (true) {
         print("""
                 Chose the Action:
@@ -72,25 +72,29 @@ func task1() {
             print("No such choice")
         }
     }
-
+    
     func createBankAccount() {
         print("Account owner name: ")
         let accountOwner = readLine()
-        var accountNumber = strId.appending(String(counter))
+        let accountNumber = strId.appending(String(counter))
         print("Enter starting balance")
         if let startingBalance = readLine() ,
-           let balance = Double (startingBalance) {
-            accountsInfo[accountNumber] = BankAccount(accountNumber: accountNumber, accountOwner: accountOwner!, balance:balance)
-            counter+=1
+            let balance = Double (startingBalance) {
+            if balance > 0 {
+                accountsInfo[accountNumber] = BankAccount(accountNumber: accountNumber, accountOwner: accountOwner!, balance:balance)
+                counter+=1
+            } else {
+                print("Balance should be more that 0")
+            }
         } else {
             print("Wrong format for balance")
         }
     }
-
+    
     func searchAccount(accountNumber: String) -> BankAccount? {
         return accountsInfo[accountNumber]
     }
-
+    
     func depositToAccount(user: BankAccount) {
         print("Enter amount to deposit:")
         if let depositAmountStr = readLine(), let depositAmount = Double(depositAmountStr) {
@@ -99,7 +103,7 @@ func task1() {
             print("Invalid format for amount")
         }
     }
-
+    
     func withdrawFromAccount(user: BankAccount) {
         print("Enter amount to withdraw:")
         if let withdrawAmountStr = readLine(), let withdrawAmount = Double(withdrawAmountStr) {
